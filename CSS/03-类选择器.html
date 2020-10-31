@@ -1,0 +1,42 @@
+<!-- 如果想要差异化选择不同的标签，单独选择一个或者某几个标签，可以使用类选择器 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 类选择器口诀：样式点定义 ，结构类调用 ，一个或多个，开发最常用*/
+        /* 首先定义一个.red的类 */
+        .red{
+            color: red;
+        }
+        .star-sing{
+            color:rosybrown;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+    <li class="red">冰雨</li>
+    <li class="red">iu</li>
+    <li>iu2</li>
+    <li>iu3</li>
+    <li class="star-sing">iu4</li>
+    <li>iu5</li>
+    </ul>
+    <!-- 不仅li标签可以调用red类，其他标签也可以，比如下面的div标签 -->
+    <div class="red">我也要变成红色</div>
+</html>
+
+
+<!-- 
+notes：
+类选择器使用"."(英文符号) 进行标识，后面紧跟类名（自定义，我们自己命名的），
+可以理解为给这个标签起了一个名字，来表示
+长名称或词组可以使用中横线来为选择器命名
+不要使用纯数字、中文等命名，尽量使用英文字母来表示
+命名要有意义，尽量使别人一眼就知道这个类名的目的
+具体命名规则可以参加手册
+-->
